@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin:0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h2font{
+    font-family: 'Kaushan Script', cursive;
+}
+/*nav*/
+.navbar ul
+{
+    display:flex;
+    list-style-type: none;
+}
+
+.navbar ul li
+{
+    padding:5px 10px;
+    margin: 0px;
+}
+
+.navbar{
+    background-color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(max-width:576px)
+{
+    .d-link
+    {
+        display: none;
+    }
+}
+/*hero*/
+.hero
+{
+    background-image: url(./bg.jpg);
+    height: 95vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.hero-text 
+{
+    width:85%;
+    color: white;
+    text-align: center;
+    padding-top: 30vh;
+    margin-left: 10vw;
+}
+
+.hero-text h1
+{
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.hero-text p{
+    font-size: 25px;
+}
+
+@media (max-width:576px)
+{
+    .hero-text h1
+    {
+        font-size:25px;
+    }
+}
+
+.btn
+{
+    padding:10px 32px;
+    border-radius: 16px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border: 1px solid white;
+}
+
+.btn:hover
+{
+    background-color: rgb(247, 142, 142);
+    color: white;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+/*about*/
+.about{
+    text-align: center;
+    font-size: 25x;
+    background-image: image();
+    color: rgb(12, 11, 11);
+    margin:0px 0px 0px 0px;
+}
+
+.about-card
+{
+    width:300px;
+    padding:5px 10px;
+    border: 1px solid rgb(230, 136, 136);
+    border-radius: 10px;
+}
+
+.parent-flex 
+{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/*gallery*/
+.gallery
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.gallery button{
+    
+    border:2px solid black;
+    outline:none;
+    background-color:white;
+    color: rgb(17, 17, 17);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.b{
+    position: absolute;
+    right:80px;
+    bottom:5px;
+
+}
+.galleryimg
+{
+    width:300px;
+    height:300px;
+    cursor: pointer;
+    transition: 0.2s ease; 
+}
+.galleryimg :hover{
+    background-color: black;
+    color: rgb(248, 166, 166);
+}
+.galleryimg button{
+    
+    width:50%;
+    height:30px;
+    color: rgb(6, 6, 6);
+    text-align: center;
+}
+.galleryimg img{
+    width:100%;
+    height:100%;
+    transition: 0.2s ease; 
+}
+
+.galleryimg img:hover{
+    transform: scale(1.04)
+}
+/*offer*/
+.offer-card
+{
+    width:300px;
+    border:1px solid rgb(244, 96, 121);
+    border-radius: 12px;
+    padding:5px 10px;
+    margin:10px;
+    justify-content: space-evenly;
+    color: black;
+}
+
+.offer
+{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.o
+{
+    padding:10px 32px;
+    width: 100%;
+    border-radius: 16px;
+    font-size: 16px;
+    background-color:pink;
+    color:black;
+    cursor: pointer;
+    border: none;  
+}
+
+.o:hover
+{
+    background-color: black;
+    color: pink;
+    border: none;
+    border: 1px solid pink
+    transition 0.5s ease-in-out;
+}
+/*footer*/
+.footer
+{
+    
+    background-color: rgb(23, 23, 23);
+    text-decoration: none;
+}
+
+@media (max-width:576px)
+{
+    .footernav ul
+    {
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+    .footernav ul li{
+        width:100%;
+        text-align: center;
+        margin: 15px;
+        
+    }
+}
+
+
+.footer1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.footer1 a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    margin: 5px;
+    
+}
+.footer a i{
+    font-size:2em;
+    color: rgb(244, 239, 239);
+    text-decoration: none;
+   
+}
+
+.footernav ul{display: flex; justify-content: center;}
+.footernav ul  a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+}
